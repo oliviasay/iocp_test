@@ -1,10 +1,7 @@
 ﻿#pragma once
 
-//#include "stdio.h"
 #include <winsock2.h>
 #include <map>
-
-//#pragma comment(lib, "Ws2_32.lib")
 
 #define MAX_BUFFER        8192//1024//
 #define SERVER_IP        "127.0.0.1"
@@ -12,17 +9,6 @@
 
 #define FLAG_RECV 0
 #define FLAG_SEND 1
-
-//struct SOCKETINFO
-//{
-//	WSAOVERLAPPED overlapped;
-//	WSABUF dataBuffer;
-//	SOCKET socket;
-//	char messageBuffer[MAX_BUFFER];
-//	int receiveBytes;
-//	int sendBytes;
-//	DWORD flags;
-//};
 
 /////////////////////////////////////////////////////////////////
 class ClientSession;
@@ -131,7 +117,7 @@ void OnDisconncted(ClientSession* clientSession)
 }
 
 
-//8/21 해야할일///////////////////////////////////////////////////////////////
+//해야할일///////////////////////////////////////////////////////////////
 //github
 //readbuff,writebuff
 //accept관리
